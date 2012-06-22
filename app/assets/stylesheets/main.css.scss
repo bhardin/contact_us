@@ -1,10 +1,12 @@
+$default-color: #3d75e6;
+
 html, body {
 	font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
 h2 {
 	font-size: 62px;
-	color: #00aad2;
+	color: $default-color;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 10px;
@@ -19,7 +21,7 @@ h3 {
 h4 {}
 
 h5 {
-	color: #087290;
+	color: $default-color;
 	font-size: 28px;
 	font-weight: 500;
 	margin: 0 0 5px 0;
@@ -55,7 +57,7 @@ form {
 	width: 500px;
 	font-size:16px;
 	label {
-		color: #0082a0;
+		color: $default-color;
 		float:left;
 		margin: 0 0 5px 0;
 	}

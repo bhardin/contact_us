@@ -1,5 +1,5 @@
 class Contact < ActiveRecord::Base
-  attr_accessible :email, :name, :phone
+  attr_accessible :email, :name, :subject
 
   before_save { self.email.downcase! }
 
@@ -8,5 +8,5 @@ class Contact < ActiveRecord::Base
 
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: {case_sensitive: false}
   validates :name, presence: true, length: { maximum: 50 }
-  validates :phone, presence: true, format: { with: PHONE_REGEX }
+  validates :subject, presence: true
 end
